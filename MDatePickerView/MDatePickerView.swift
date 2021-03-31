@@ -22,7 +22,7 @@ public class MDatePickerView : UIView {
     
     public var to : Int = Calendar.current.component(.year, from: Date())
     
-    public var cornerRadius : CGFloat = 18 {
+  public override var cornerRadius : CGFloat {
         didSet{
             Col.layer.cornerRadius = cornerRadius
         }
