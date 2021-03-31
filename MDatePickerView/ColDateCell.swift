@@ -23,7 +23,7 @@ class ColMonthCell: ColCell {
         cell.Label.text = "\(month[indexPath.row])"
         cell.Week.isHidden = WeekIsHidden
         cell.Label.textColor = .white
-        cell.Label.font = UIFont.boldSystemFont(ofSize: frame.height / 2.5)
+        cell.Label.font = UIFont(name: "Quicksand-SemiBold", size: frame.height / 2.5)
         return cell
     }
     
@@ -93,8 +93,8 @@ class ColDayCell: ColCell {
             cell.Week.text = week[Comps - 1]
         }
         
-        cell.Label.font = UIFont.boldSystemFont(ofSize: frame.height / 2)
-        cell.Week.font = UIFont.boldSystemFont(ofSize: frame.height / 6)
+        cell.Label.font = UIFont(name: "Quicksand-SemiBold", size: frame.height / 2)
+        cell.Week.font = UIFont(name: "Quicksand-SemiBold", size: frame.height / 6)//UIFont.boldSystemFont(ofSize: frame.height / 6)
         cell.Label.text = "\(indexPath.row + 1)"
         cell.Week.isHidden = false
         cell.Week.textColor = WeekColor
@@ -134,7 +134,7 @@ class ColYearCell: ColCell {
         let cell = Col.dequeueReusableCell(withReuseIdentifier: ColCellID, for: indexPath) as! Cell
         cell.Label.text = "\(Year[indexPath.row])"
         cell.Week.isHidden = WeekIsHidden
-        cell.Label.font = UIFont.boldSystemFont(ofSize: frame.height / 2.5)
+        cell.Label.font =  UIFont(name: "Quicksand-SemiBold", size: frame.height / 2.5)
         return cell
     }
     
